@@ -1,9 +1,10 @@
 #!/bin/bash
-yum update -y
-yum install httpd
-mkdir -p /var/www/html/example.com/{public_html,logs}
-systemctl enable httpd.service
-systemctl restart httpd.service
-firewall-cmd --zone=public --permanent --add-service=http
-firewall-cmd --zone=public --permanent --add-service=https
-firewall-cmd --reload
+sudo yum update -y
+sudo yum install httpd
+sudo mkdir -p /var/www/html/example.com/{public_html,logs}
+sudo systemctl enable httpd.service
+sudo systemctl restart httpd.service
+sudo firewall-cmd --zone=public --permanent --add-service=http
+sudo firewall-cmd --zone=public --permanent --add-service=https
+sudo firewall-cmd --reload
+EOF
