@@ -7,4 +7,3 @@ sudo systemctl restart httpd.service
 sudo firewall-cmd --zone=public --permanent --add-service=http
 sudo firewall-cmd --zone=public --permanent --add-service=https
 sudo firewall-cmd --reload
-EOF
