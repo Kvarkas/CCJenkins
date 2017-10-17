@@ -15,5 +15,5 @@ sudo firewall-cmd --reload
 agentSendLogMessage "SCRIPT MESSAGE: Node setup completed"
 
 agentSendLogMessage "SCRIPT MESSAGE: Start deploy routine..."
-cd /var/www/html/example.com/public_html && curl -O 'https://raw.githubusercontent.com/Kvarkas/CCJenkins/master/index.html'
+sudo cd /var/www/html/example.com/public_html && sudo curl -O 'https://raw.githubusercontent.com/Kvarkas/CCJenkins/master/index.html'
 agentSendLogMessage "SCRIPT MESSAGE: Deploy has been completed"
